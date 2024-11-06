@@ -1,0 +1,97 @@
+@import 'header.css';
+@import 'footer.css';
+@import 'main.css';
+@import 'blog.css';
+
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+button:hover,
+a:hover {
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+blockquote {
+    background-color: #ffffff;
+    quotes: "'" "'";
+    color: rgb(0, 0, 0);
+    margin-left: 0;
+}
+
+
+
+
+@media (max-width: 1100px) {
+
+    header .container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    header .list ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .main .contant {
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+    }
+    .card-item {
+       
+        width: calc(100% - 20px);
+        flex: 1 1 100%;
+        padding: 15px;
+        margin: 10px 0;
+     
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Media query for mobile */
+ @media (max-width: 480px) {
+    header.navbar {
+        padding: 15px 0;
+        width: 100%;
+    }
+
+    header .logo-title {
+        font-size: 20px;
+    }
+
+    header .list ul {
+        gap: 5px;
+    }
+ 
+    .card-item {
+        
+       width: calc(50% - 20px);
+        flex: 1 1 100%;
+        padding: 15px;
+        margin: 10px 0;
+    }
+
+    footer {
+        font-size: 14px;
+        width: 100%;
+    }
+    
+}
